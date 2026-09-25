@@ -1,0 +1,28 @@
+{
+  "name": "@garimpo/infrastructure",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@garimpo/domain": "*",
+    "@garimpo/application": "*",
+    "drizzle-orm": "^0.45.3",
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@garimpo/config": "*",
+    "eslint": "^9.39.0",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.1",
+    "@types/node": "^24.0.0",
+    "drizzle-kit": "^0.31.11"
+  }
+}

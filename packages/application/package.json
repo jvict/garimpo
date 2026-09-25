@@ -1,0 +1,24 @@
+{
+  "name": "@garimpo/application",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@garimpo/domain": "*",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@garimpo/config": "*",
+    "eslint": "^9.39.0",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.1"
+  }
+}

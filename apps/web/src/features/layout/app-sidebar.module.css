@@ -1,0 +1,32 @@
+.link {
+  height: 38px;
+  border-radius: var(--mantine-radius-md);
+  border: 1px solid transparent;
+  color: var(--mantine-color-ink-6);
+  font-weight: 500;
+}
+
+.link:hover {
+  background: var(--mantine-color-ink-1);
+  color: var(--mantine-color-ink-8);
+}
+
+.link[data-active] {
+  background: #fff;
+  border-color: var(--mantine-color-ink-2);
+  box-shadow: 0 1px 2px rgb(28 27 25 / 6%);
+  color: var(--mantine-color-ink-8);
+}
+
+.link[data-active] :global(.mantine-NavLink-label) {
+  font-weight: 600;
+}
+
+.section {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mantine-color-ink-5);
+  padding: 18px 10px 6px;
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@garimpo/config/tsconfig.base.json",
+  "compilerOptions": {
+    "lib": [
+      "ES2023",
+      "DOM"
+    ],
+    "jsx": "react-jsx",
+    "exactOptionalPropertyTypes": false
+  },
+  "include": [
+    "src"
+  ]
+}
